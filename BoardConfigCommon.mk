@@ -30,8 +30,9 @@ TARGET_RECOVERY_FSTAB := device/samsung/scx30g2-common/rootdir/fstab.sc8830
 SOC_SCX30G_V2 := true
 
 # RIL
+BOARD_PROVIDES_LIBRIL := true
+BOARD_PROVIDES_RILD := true
 TARGET_SPECIFIC_HEADER_PATH := device/samsung/scx30g2-common/include
-SIM_COUNT := 2
 
 # RIL shim
 TARGET_LD_SHIM_LIBS += \
