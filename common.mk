@@ -26,6 +26,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
 	device/samsung/scx30g2-common/system/etc/init/rild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/rild.rc
 
+PRODUCT_PACKAGES += \
+	libsecril-shim
+
 # Interactive governor configs
 PRODUCT_PACKAGES += \
 	interactive_gov.rc
