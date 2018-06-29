@@ -2863,7 +2863,7 @@ int radio::getIccCardStatusResponse(int slotId,
                 appStatus[i].pin1 = (PinState) rilAppStatus[i].pin1;
                 appStatus[i].pin2 = (PinState) rilAppStatus[i].pin2;
             }
-        } else if (responseLen == sizeof(RIL_CardStatus_v6)) {
+        } else if (responseLen == sizeof(RIL_CardStatus_v6) || responseLen == 440) {
             RIL_CardStatus_v6 *p_cur = ((RIL_CardStatus_v6 *) response);
             cardStatus.cardState = (CardState) p_cur->card_state;
             cardStatus.universalPinState = (PinState) p_cur->universal_pin_state;
